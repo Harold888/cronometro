@@ -7,7 +7,6 @@ function cronometro(){
             segundo++;
         }else{
             segundo=0;
-            minuto++;
             if(minuto<60){
                 minuto++;
             }else{
@@ -17,13 +16,17 @@ function cronometro(){
         }
 
         //Pausa de 1 segundo
-     
+     /*
         let fecha = new Date();
         let fecha2 = new Date();
         while(fecha2-fecha<1000){
             fecha2= new Date();
         }
-        console.log(hora+":"+minuto+":"+segundo);
+        */ 
+
+        setTimeout(function(){console.log(hora+":"+minuto+":"+segundo)}, 1000);
+
+        
     }
 
 }
